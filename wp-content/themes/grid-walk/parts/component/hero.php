@@ -1,6 +1,6 @@
 <section class="homepage-hero">
     <div class="homepage-hero__img">
-        <img src="<?php echo get_theme_file_uri('/img/hero-image.jpg'); ?>" alt="#">
+        <img src="<?php echo get_theme_file_uri('/img/temp/hero-image.jpg'); ?>" alt="#">
     </div>
     <div class="homepage-hero__content">
         <h2 class="homepage-hero__title">Engineered Beauty</h2>
