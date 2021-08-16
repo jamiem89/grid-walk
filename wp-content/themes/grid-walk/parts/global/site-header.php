@@ -1,18 +1,18 @@
-<header>
-    <h1 class="site-logo">
-        <a href="<?php echo site_url(); ?>">Grid Walk</a>
-    </h1>
+<div class="wrapper">
+<div class="container">
 
-    <div class="header-menu">
-        <button class="header-menu__trigger">Open</button>
+    <header class="site-header">
+        <h1 class="site-logo"><a href="<?php echo site_url(); ?>">Grid Walk</a></h1>
 
-        <div class="header-menu__container">
+        <nav class="site-header__menu" id="menuBlock">
+            <button class="site-header__trigger" id="menuTrigger">Open menu</button>
             <?php wp_nav_menu(array(
-                'theme_location' => 'headerMenu'
+                'theme_location' => 'headerMenu',
+                'menu_class' => 'site-header__menu-items',
+                'menu_id' => 'menuBlock',
+                'container' => ''
             )); ?>
-            <a href="#" class="header-menu__btn">Log in</a>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-
-</header>
+</div>
